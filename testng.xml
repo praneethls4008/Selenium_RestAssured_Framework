@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org
+" >
+<suite name="Basic Test Suite">
+    <test name="Sanity Tests">
+        <classes>
+            <class name="org.example.BasicTest"/>
+        </classes>
+    </test>
+</suite>
