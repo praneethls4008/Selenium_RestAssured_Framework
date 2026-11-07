@@ -28,6 +28,4 @@ public class ApiClient {
     public Response getBinary(String path) {
         return given().spec(SpecificationFactory.requestSpec()).accept("*/*").when().get(path);
     }
-
-
 }
