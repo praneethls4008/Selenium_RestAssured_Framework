@@ -20,8 +20,7 @@ public final class Config {
         }
 
         env = env.toLowerCase();
-
-        String file = "config/" + env + ".properties";
+        String file = "env/" + env + ".properties";
 
         try (InputStream input = Config.class.getClassLoader().getResourceAsStream(file)) {
             if (input == null) throw new IllegalStateException("Missing configuration: " + file);

@@ -1,5 +1,13 @@
 package localhost.models.request;
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
+import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
-public record UpdateProductRequest(String title, Double price, String description, Integer categoryId, List<String> images) {}
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public record UpdateProductRequest(
+        String title,
+        Double price,
+        String description,
+        Integer categoryId,
+        List<String> images
+) {}
