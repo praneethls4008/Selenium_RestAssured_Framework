@@ -19,11 +19,11 @@ dependencies {
 }
 
 
-//java {
-//    toolchain {
-//        languageVersion.set(JavaLanguageVersion.of(21))
-//    }
-//}
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(25))
+    }
+}
 
 tasks.test {
     useTestNG()
@@ -46,15 +46,6 @@ val allureVersion = "2.27.0"
 
 allure {
     version.set(allureVersion)
-//    adapter {
-//        autoconfigure.set(true)
-//        aspectjWeaver.set(true)
-//        frameworks {
-//            testng {
-//                adapterVersion.set(allureVersion)
-//            }
-//        }
-//    }
 }
 
 
